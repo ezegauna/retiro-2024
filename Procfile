@@ -1,0 +1,1 @@
+web: gunicorn retiro2024.wsgi
