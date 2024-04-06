@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VF :: Retiro Pos Pascua 2024</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
+    <link href="https://fonts.googleapis.com/css?family=Metal:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static "phrases/css/bd-coming-soon.css" %}">
+</head>
+
+<body class="min-vh-100 d-flex flex-column">
+
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-dark bg-transparenet">
+                <a class="navbar-brand" href="#">
+                    <img src="{% static "phrases/images/logo.png" %}" style="height: 50px;" alt="logo">
+                </a>
+            </nav>
+        </div>
+    </header>
+    <main class="my-auto">
+        <div class="container">
+            <h1 class="page-title" style="text-align: center;text-shadow: 0px 2px 7px black;">
+                {{ frase_aleatoria.contenido }}
+            </h1>
+            <br><br><br>
+            <nav class="footer-social-links" style="text-align: center;">
+                <a href="https://www.instagram.com/jovenesflores" class="social-link"><i class="mdi mdi-instagram"></i></a>
+            </nav>
+        </div>
+    </main>
+</body>
+
+</html>

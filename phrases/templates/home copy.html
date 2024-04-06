@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frases Aleatorias</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="frase-container" class="hidden">
+        <h1 id="frase">{{ frase_aleatoria.contenido }}</h1>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                document.getElementById('frase-container').classList.remove('hidden');
+            }, 2000); // 2000 milliseconds delay
+        });
+    </script>
+</body>
+</html>
